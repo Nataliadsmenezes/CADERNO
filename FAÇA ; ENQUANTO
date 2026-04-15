@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    // materia dia 14/04
+
+    
+    cadeia senhaCorreta ="dev123"
+    cadeia senhadigitada = ""
+
+    faca {
+      escreva ("\n INFORME A SENHA: ")
+      leia (senhadigitada)
+    }enquanto (senhadigitada != senhaCorreta)
+
+    escreva ("Acesso Permitido !")
+  }
+}
