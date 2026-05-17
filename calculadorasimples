@@ -1,0 +1,52 @@
+programa
+{
+    funcao real calcular(real n1, real n2, cadeia op)
+    {
+        se (op == "+")
+        {
+            retorne n1 + n2
+        }
+
+        senao se (op == "-")
+        {
+            retorne n1 - n2
+        }
+
+        senao se (op == "*")
+        {
+            retorne n1 * n2
+        }
+
+        senao se (op == "/")
+        {
+            retorne n1 / n2
+        }
+
+        senao
+        {
+            escreva("Operação inválida!\n")
+            retorne 0
+        }
+    }
+
+    funcao inicio()
+    {
+        real num1, num2, resultado
+        cadeia operador
+
+        escreva("=== CALCULADORA ===\n")
+
+        escreva("Digite o primeiro número: ")
+        leia(num1)
+
+        escreva("Digite a operação (+, -, *, /): ")
+        leia(operador)
+
+        escreva("Digite o segundo número: ")
+        leia(num2)
+
+        resultado = calcular(num1, num2, operador)
+
+        escreva("Resultado: ", resultado)
+    }
+}
