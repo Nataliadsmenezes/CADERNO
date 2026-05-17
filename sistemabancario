@@ -1,0 +1,82 @@
+programa
+{
+    real saldo = 1500
+
+    funcao vazio mostrarSaldo()
+    {
+        escreva("\n--- SALDO ---\n")
+        escreva("Seu saldo atual é: R$ ", saldo, "\n")
+    }
+
+    funcao vazio mostrarExtrato()
+    {
+        escreva("\n--- EXTRATO ---\n")
+        escreva("Nenhuma movimentação registrada.\n")
+    }
+
+    funcao vazio fazerEmprestimo()
+    {
+        real valor
+
+        escreva("\n--- EMPRÉSTIMO ---\n")
+        escreva("Digite o valor do empréstimo: ")
+        leia(valor)
+
+        se (valor > saldo)
+        {
+            escreva("Empréstimo negado!\n")
+        }
+        senao
+        {
+            escreva("Empréstimo aprovado!\n")
+
+            saldo = saldo + valor
+
+            escreva("Novo saldo: R$ ", saldo, "\n")
+        }
+    }
+
+    funcao vazio menuPrincipal()
+    {
+        inteiro opcao
+
+        faca
+        {
+            escreva("\n===== SISTEMA BANCÁRIO =====\n")
+            escreva("1 - Saldo\n")
+            escreva("2 - Extrato\n")
+            escreva("3 - Solicitar Empréstimo\n")
+            escreva("4 - Sair\n")
+            escreva("Escolha uma opção: ")
+            leia(opcao)
+
+            escolha(opcao)
+            {
+                caso 1:
+                    mostrarSaldo()
+                    pare
+
+                caso 2:
+                    mostrarExtrato()
+                    pare
+
+                caso 3:
+                    fazerEmprestimo()
+                    pare
+
+                caso 4:
+                    escreva("Sistema encerrado!\n")
+                    pare
+
+                caso contrario:
+                    escreva("Opcao inválida!\n")
+            }
+
+        } enquanto (opcao != 4)
+    }
+
+    funcao inicio()
+    {
+        menuPrincipal()
+    }
+}
