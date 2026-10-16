@@ -1,0 +1,23 @@
+body{font-family:Arial, sans-serif;}
+h1{color:#1f4e79;}
+p{font-size: 22px;}
+h1{color:navy;}
+p{color:#333; font-size: 20px;}
+.destaque{color:red;font-weight:bold;}
+#titulo{color:darkgreen;text-align:center;}
+body{background-color:#f4f6f8;}
+body{font-family:Arial, sans-serif;}
+h2{font-family: Georgia,serif;}
+h3{font: size 36px; font-weight:bold;}
+p{font: size 22px;font-weight:normal;}
+.caixa{margin: 30px;background-color:#ddd;}
+.caixa{padding:25px;background-color:#ddd;}
+.caixa{border: 3px solid #1f4e79; border-radius: 10px;background-color:#9ee575;}
+.caixa{width: 300px; padding: 20px; border: 3px solid black; margin: 20px auto; margin: 01px;}/* margin = espaçamento entre as caixas*/
+.caixa{width: 80%; max-width: 700px;}
+a{color: #1565c0; text-decoration: none;} /* cor que ficaré escrito*/
+a:hover{text-decoration: underline; color: #e7a4d6;}/* cor que ficará escrito quando passar o mouse por cima*/
+.botao{background-color: #1565c0; color: rgb(255, 255, 255); padding: 12px 20px; border-radius: 8px; text-decoration: none;}
+.botao:hover{background-color: #da1175;} /* cor que ficará preenchendo o botão quando passar o mouse por cima*/
+.foto{width: 400px;border-radius: 12px; border: 3px solid #333; }
+.card{width: 300px; padding: 25px; margin: 20px; background: white; border: 1px solid #ccc; border-radius: 12px; box-shadow: 0 4px 10px #bbb;}
